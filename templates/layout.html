@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href=" {{url_for('static',filename='style/main.css')}} " />
-
 </head>
 <body>
     <h1>Horizon Travles</h1>
-    {% block Navbar %}
-    
-    {% endblock %}
+    <nav class="flex-container">
+        <div class="nav-item"><a href="/">Destinations</a></div>
+        <div class="nav-item"><a href="/timetable">Timetable</a></div>
+        <div class="nav-item"><a href="/booking">Booking</a></div>
+    </nav>
+    <section>
+        {% block content_title %}{% endblock %}
+    </section>
 
-<!--
-    {% block content_title %}{% endblock %}
-
-    {% block content %}{% endblock %}
--->
+    <article>
+        {% block content %}{% endblock %}
+    </article>
 </body>
 </html>

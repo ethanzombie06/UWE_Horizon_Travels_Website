@@ -6,5 +6,9 @@ app = Flask(__name__)
 def Homepage():
     return render_template('home.html') 
 
+@app.route('/timetable')
+def Timetable():
+    return render_template('timetable.html')
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

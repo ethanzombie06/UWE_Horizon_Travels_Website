@@ -1,8 +1,15 @@
 {% extends 'layout.html' %}
-    {% block Navbar %}
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="">Destinations</a></li>
-            <li><a href="">Booking</a></li>
-        </ul>
+    {% block content_title %}
+        <h2>See our destinations</h2>
+    {% endblock %}
+
+    {% block content %}
+    <div class="flex-container">
+        <div style="background-image: url(/static/imgs/Bristol.jpg);"  class="destination-block">
+            <h3>Bristol</h3>
+        </div>
+        <div style="background-image: url(/static/imgs/Cardiff.jpg);"  class="destination-block">
+            <h3>Cardiff</h3>
+        </div>
+    </div>
     {% endblock %}
