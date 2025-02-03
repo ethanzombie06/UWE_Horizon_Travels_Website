@@ -1,0 +1,1 @@
+SELECT * FROM testdatabase.flight_info;

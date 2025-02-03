@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, request, flash, url_for
 from forms import SignInForm, SignUpForm
 
 f = open("demofile2.txt", "a")
-f.write("--------------------")
+f.write("\n--------------------\n")
 f.close()
 
 app = Flask(__name__)

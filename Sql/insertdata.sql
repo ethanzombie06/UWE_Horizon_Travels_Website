@@ -1,0 +1,23 @@
+INSERT INTO flight_info (flight_id, departure_location, departure_time, destination_location, arival_time)
+VALUES 
+(1, 'Newcastle', '17:45:00', 'Bristol', '19:00:00'),
+(2, 'Newcastle', '16:15:00', 'Manchester', '22:30:00'),
+(3, 'Newcastle', '07:00:00', 'Birmingham', '07:45:00'),
+(4, 'Bristol', '09:00:00', 'Newcastle', '10:15:00'),
+(5, 'Bristol', '12:30:00', 'Manchester', '13:30:00'),
+(6, 'Bristol', '07:40:00', 'London', '08:20:00'),
+(7, 'Bristol', '08:40:00', 'Glasgow', '09:45:00'),
+(8, 'Bristol', '06:20:00', 'Manchester', '07:20:00'),
+(9, 'Cardiff', '07:00:00', 'Edinburgh', '08:30:00'),
+(10, 'Manchester', '13:20:00', 'Bristol', '14:20:00'),
+(11, 'Manchester', '12:20:00', 'Glasgow', '13:30:00'),
+(12, 'London', '13:00:00', 'Manchester', '14:00:00'),
+(13, 'Glasgow', '14:30:00', 'Newcastle', '15:45:00'),
+(14, 'Manchester', '18:25:00', 'Bristol', '19:30:00'),
+(15, 'Manchester', '19:00:00', 'Southampton', '20:30:00'),
+(16, 'Portsmouth', '12:00:00', 'Dundee', '14:00:00'),
+(17, 'Dundee', '10:00:00', 'Portsmouth', '12:00:00'),
+(18, 'edinburgh', '18:30:00', 'Cardiff', '20:00:00'),
+(19, 'Southampton', '12:00:00', 'Manchester', '13:30:00'),
+(20, 'Birmingham', '17:00:00', 'Newcastle', '17:45:00'),
+(21, 'Aberdeen', '08:00:00', 'Portsmouth', '09:30:00');
