@@ -47,7 +47,7 @@ def Sign_Up():
         flash('Thanks for registering! Please now sign in.')
         return redirect(url_for('Sign_in'))
 
-    return render_template('home.html') 
+    return render_template('sign_up.html', form=form) 
 
 if __name__ == '__main__':
     app.run(debug=True)

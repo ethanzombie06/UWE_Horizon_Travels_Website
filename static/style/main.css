@@ -77,6 +77,18 @@ section{
     gap: 5%;
 }
 
+.form-container{
+    border-radius: 6px;
+    padding: 14px;
+    background-color: #fff;
+    justify-self: center;
+}
+.submit-button-form{
+    border: black;
+    border-radius: 6px;
+    padding: 14px;
+}
+
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;

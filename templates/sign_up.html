@@ -1,8 +1,20 @@
+{% from "macros/forms.html" import render_text_field %}
+
 {% extends 'layout.html' %}
     {% block content_title %}
         <h2>Sign Up</h2>
     {% endblock %}
 
     {% block content %}
-        {{ }}
-    {% endblock %}
+    <form name="" method=post>
+        <div class="form-container">
+            {{ render_text_field(form.username) }}
+            {{ render_text_field(form.email) }}
+            {{ render_text_field(form.password) }}
+            {{ render_text_field(form.confirm) }}
+            <div>
+                {{ form.submit(class_="submit-button-form") }}
+            </div>
+        </div>
+    </form>
+{% endblock %}
