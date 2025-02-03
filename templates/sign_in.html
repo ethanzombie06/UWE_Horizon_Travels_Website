@@ -2,13 +2,12 @@
 
 {% extends 'layout.html' %}
     {% block content_title %}
-        <h2>Sign in</h2>
+        <h2>Sign In</h2>
     {% endblock %}
 
     {% block content %}
         <form name="" method=post>
             <div class="form-container">
-                <h3>Sign in!</h3>
                 {{ render_text_field(form.username) }}
                 {{ render_text_field(form.email) }}
                 {{ render_text_field(form.password) }}
