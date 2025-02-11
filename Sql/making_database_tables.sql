@@ -1,5 +1,5 @@
-CREATE DATABASE testdatabase;
-USE testdatabase;
+CREATE DATABASE Horizion_travles_database;
+USE Horizion_travles_database;
 CREATE TABLE user_info (
 	user_id int NOT NULL,
     LastName varchar(255) NOT NULL,

@@ -1,6 +1,12 @@
 from flask import Flask, render_template, redirect, request, flash, url_for
 from forms import SignInForm, SignUpForm
 
+import mysql.connector, dbfunc
+
+conn = dbfunc.getConnection()   #connection to DB
+DB_NAME = 'TEST_DB'             #DB Name
+TABLE_NAME = 'User'
+
 f = open("demofile2.txt", "a")
 f.write("\n--------------------\n")
 f.close()
