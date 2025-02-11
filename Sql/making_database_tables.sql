@@ -2,9 +2,9 @@ CREATE DATABASE Horizion_travles_database;
 USE Horizion_travles_database;
 CREATE TABLE user_info (
 	user_id int NOT NULL,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int,
+    lastname varchar(255) NOT NULL,
+    firstname varchar(255),
+    age int,
     email varchar(255) NOT NULL,
     hashed_password char(60) NOT NULL,
     PRIMARY KEY (user_id)

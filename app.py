@@ -1,11 +1,13 @@
 from flask import Flask, render_template, redirect, request, flash, url_for
 from forms import SignInForm, SignUpForm
 
-import mysql.connector, dbfunc
+import mysql.connector
 
-conn = dbfunc.getConnection()   #connection to DB
-DB_NAME = 'TEST_DB'             #DB Name
-TABLE_NAME = 'User'
+cnx = mysql.connector.connect(user = 'root', password='sql1',
+                              host = '127.0.0.1',
+                              database = 'Horizion_travles_database')
+
+cnx.close()
 
 f = open("demofile2.txt", "a")
 f.write("\n--------------------\n")
