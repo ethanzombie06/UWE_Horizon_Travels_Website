@@ -8,7 +8,8 @@
     {% block content %}
         <form name="" method=post>
             <div class="form-container">
-                {{ render_text_field(form.username) }}
+                {{ render_text_field(form.fname) }}
+                {{ render_text_field(form.lname) }}
                 {{ render_text_field(form.email) }}
                 {{ render_text_field(form.password) }}
                 <div>

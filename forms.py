@@ -5,7 +5,7 @@ import email_validator
 class SignUpForm(Form):
     fname = StringField('First name: ', [validators.Length(min=4, max=25)])
     lname = StringField('Last name: ', [validators.Length(min=4, max=25)])
-    Age = IntegerField("Age: ", [validators.NumberRange(min=18, max=130)])
+    age = IntegerField("Age: ", [validators.NumberRange(min=18, max=130)])
     email = EmailField('Email address: ', [validators.DataRequired(), validators.Email()])
     password = PasswordField('New Password: ', [
         validators.DataRequired(),

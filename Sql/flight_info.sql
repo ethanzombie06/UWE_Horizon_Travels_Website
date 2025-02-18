@@ -1,1 +1,1 @@
-SELECT * FROM testdatabase.flight_info;
+SELECT * FROM user_info;
